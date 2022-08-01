@@ -1,0 +1,378 @@
+body {
+    font-family: 'Alice', serif;
+    background-image: url("../imagens/Plano\ de\ Fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-top: 50px;
+}
+.cabecalho .tituloCabecalho {
+    color: #f1ecff;
+    font-size: 36px;
+}
+.cabecalho .mtg {
+    width: 123px;
+    height: 35px;
+}
+.mtgSlider {
+    display: flex;
+    align-items: center;
+    margin: 60px 0;
+    justify-content: center;
+    margin-top: 56px;
+    gap: 80px;
+    
+}
+.listaCard{
+    background-color: #171314;
+    width: 500px;
+    height: 700px;
+    border-radius: 25px;
+    position: relative;
+}
+.btnSeta {
+    background-color: rgb(228, 228, 228);
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: -8px 9px 16px -3px gray;
+    transition: background-color 0.2s ease-in-out;
+}
+.btnSeta.btnVoltar {
+    transform: rotateY(180deg);
+}
+.btnSeta:hover {
+    background-color: rgb(255, 254, 254);
+}
+.cartao {
+    opacity: 0;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 0;
+    border-radius: 25px;
+    box-sizing: border-box;
+    box-shadow: -8px 9px 16px -3px gray;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 15px;
+    transition: opacity 0.3s ease-in-out;
+}
+.cartao.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+
+.backgroundCard {
+    height: 600px;
+    margin: 20px 20px 0 20px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+    background-color: rgb(196, 15, 15);
+    z-index: 0;
+    background-image: url(https://firebreak.com.br/wp-content/uploads/2019/05/fire-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.backgroundCard1 {
+    height: 600px;
+    margin: 20px 20px 0 20px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+    background-color: #bbb;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.backgroundCard2 {
+    height: 600px;
+    margin: 20px 20px 0 20px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+    background-color: #bbb;
+    z-index: 0;
+    background-image: url(https://i.pinimg.com/736x/37/1e/97/371e97ba7baa3b0675f7d4c47c217e61.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.backgroundCard3 {
+    height: 600px;
+    margin: 20px 20px 0 20px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+    background-color: #bbb;
+    z-index: 0;
+    background-image: url(../imagens/caveirafundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.conteudoCard {
+    z-index: 1;
+    position: relative;
+    height: 108%;
+    max-width: 97%;
+    left: 1%;
+    top: 0.5%;
+    left: 1.2%;
+    display: flex;
+    flex-direction: column;
+}
+/* overflow */
+
+.overflow {
+    overflow: hidden;
+}
+ /* bordas */
+ .bordas1 {
+    border-bottom: 4px solid #641212;
+    border-left: 2px solid #641212;
+    border-top: 1px solid rgb(255, 90, 90);
+    border-right: 1px solid rgb(255, 90, 90);
+    box-shadow: 0 0 0 2px #171314, 0 0 0 5px #a00e0e, -3px 3px 2px 5px #171314;
+    margin-bottom: 7px;
+}
+.textoCard {
+    box-shadow: 0 0 0 5px #a00e0e, -2px 3px 2px 5px #171314
+}
+.bordas2 {
+    border-bottom: 4px solid #a9a9a9;
+    border-left: 2px solid #a9a9a9;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    box-shadow: 0 0 0 2px #171314, 0 0 0 5px #c9b489, -3px 3px 2px 5px #171314;
+    margin-bottom: 7px;
+}
+.textoCard1 {
+    box-shadow: 0 0 0 5px #c9b489, -2px 3px 2px 5px #171314
+}
+.bordas3 {
+    border-bottom: 4px solid #a9a9a9;
+    border-left: 2px solid #a9a9a9;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    box-shadow: 0 0 0 2px #171314, 0 0 0 5px #26714A, -3px 3px 2px 5px #171314;
+    margin-bottom: 7px;
+}
+.textoCard2 {
+    box-shadow: 0 0 0 5px #26714A, -2px 3px 2px 5px #171314
+}
+.tituloCard,
+.descricao {
+    background: linear-gradient(0deg, rgba(237, 164, 164, 0.3), rgba(199, 121, 121, 0.3)), url(https://image.ibb.co/jKByZn/tile_bg_1.jpg);
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 18px/40px;
+ }
+.tituloCard1,
+.descricao1 {
+    background: linear-gradient(0deg, rgba(201, 216, 201, .3), rgba(201, 216, 209, .3)), url(https://image.ibb.co/jKByZn/tile_bg_1.jpg);
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 12px 0 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 18px/40px;
+}
+/* imagem da carta */
+.art img {
+    height: 309px;
+    margin:0px;
+    width: 415px;
+}
+.art1 img {
+    height: 320px;
+    margin:0px;
+    width: 415px;
+}
+.art2 img {
+    height: 327px;
+    margin:0px;
+    width: 415px;
+}
+
+/* nome e tipo do card, textos */
+.nomeCard, 
+.tipo {
+    font-size: 1.3em;
+    margin-left: 10px;
+    align-self: baseline;
+    font-weight: 600;
+    font-family: 'Yeseva One', cursive;
+}
+.criaturaNoite {
+    font-size: 1.6em;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: -0.05em 0.12em 0px 0 black;
+    margin-right: 0px;
+    height: 30px;
+    align-self: center;
+}
+#manaIcon {
+    font-size: 1.4em;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: -0.05em 0.12em 0px 0 black;
+    margin-right: 0px;
+    height: 20px;
+    align-self: center;
+}
+#raridade {
+    height: 25px;
+    width: 10;
+    overflow: hidden;
+    margin: 10px;
+    align-self: center;
+}
+#manaIcon1{
+    
+    font-size: 1.4em;
+    background: #ADD3AC;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: -0.05em 0.12em 0px 0 black;
+    margin-right: 5px;
+    height: 20px;
+    align-self: center;
+       
+}
+.textoCard2.overflow.terreno p img {
+    height: 120px;
+    width: 120px;
+    margin: 0px;
+    align-items: center;
+    padding-left: 35%;
+}
+.textoCard1.overflow.terreno p img {
+    height: 120px;
+    width: 120px;
+    margin: 0px;
+    align-items: center;
+    padding-left: 35%;
+}
+.descricao,
+.descricao1 {
+    margin-top: 0;
+ }
+.textoCard{
+    margin: 0 10px;
+    background: linear-gradient(0deg, rgba(207, 140, 140, 0.3), rgba(199, 121, 121, 0.3)), url(https://image.ibb.co/jKByZn/tile_bg_1.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 65px 8px;
+    box-sizing: border-box;
+    font-size: 1.0em;
+    font-family: 'Alice', serif;
+}
+.textoCard1,
+.textoCard2 {
+    margin: 0 10px;
+    background: rgba(235, 139, 139, 0.3);
+    background-image: url(https://image.ibb.co/jKByZn/tile_bg_1.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 65px 8px;
+    box-sizing: border-box;
+    font-size: 1.0em;
+    font-family: 'Alice', serif;
+}
+.fraseEfeito {
+    font-style: italic;
+    padding: 10px 0;
+}
+p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.textoCard,
+.textoCard1,
+.textoCard2 {
+    margin: 5px 1px;
+}
+/* rodapé */
+.rodape {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 15px 0 15px;
+}
+.rodapeEsquerda {
+    flex: 1;
+}
+.rodapeEsquerda p:first-of-type {
+    margin-bottom: 1px;
+}
+.rodapeDireita {
+    flex: 1;
+    text-align: right;
+}
+/* ataque e defesa da carta */
+.poder {
+    text-align: right;
+    font-style: bold;
+    font-family: 'Yeseva One', cursive;
+    font-size: 18px;
+    background: linear-gradient(0deg, rgba(237, 164, 164, 0.3), rgba(199, 121, 121, 0.3)), url(https://image.ibb.co/jKByZn/tile_bg_1.jpg);
+    display: flex;
+    margin-top: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px 25px;
+    display: flex;
+    border-radius: 18px/40px;
+    border-bottom: 4px solid #641212;
+    border-left: 2px solid #641212;
+    border-top: 1px solid rgb(255, 90, 90);
+    border-right: 1px solid rgb(255, 90, 90);
+    align-self: flex-end;
+}
+.poder1 {
+    text-align: right;
+    font-style: bold;
+    font-family: 'Yeseva One', cursive;
+    font-size: 18px;
+    background: linear-gradient(0deg, rgba(201, 216, 201, .3), rgba(201, 216, 209, .3)), url(https://image.ibb.co/jKByZn/tile_bg_1.jpg);
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px 25px;
+    display: flex;
+    border-radius: 18px/40px;
+    border-bottom: 4px solid #171314;
+    border-left: 2px solid #171314;
+    border-top: 1px solid #a9a9a9;
+    border-right: 1px solid #a9a9a9;
+    align-self: flex-end;
+}

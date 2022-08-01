@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href=”//cdn.jsdelivr.net/npm/mana-font@latest/css/mana.css” rel=”stylesheet” type=”text/css” />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Lobster+Two:wght@400;700&family=Yeseva+One&display=swap" rel="stylesheet">
+    
+    <title>Projeto Magic</title>
+
+    <link rel="shortcut icon" href="src/imagens/logoaba.jpg" type="image/x-icon">
+
+    
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/estilos.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="src/imagens/Magicthegathering-logo.svg.png" alt="logo-magic" class="mtg">
+        <h1 class="tituloCabecalho">Magic The Gathering Slider</h1>
+    </header>
+    <main class="mtgSlider">
+        <button class="btnSeta btnVoltar" id="btnVoltar">
+            <img src="src/imagens/seta.png" alt="setaVoltar">
+        </button>
+        
+        <ul class="listaCard">
+            <li class="cartao selecionado">
+                <div>
+                    <div class="backgroundCard">
+                        <div class="conteudoCard">
+                            <div class="tituloCard overflow bordas1">
+                                <h2 class="nomeCard">Avacyn, a Purificadora</h2>
+                                <p class="criaturaNoite"><img src="src/imagens/dfc-night.svg"></p>
+                            </div>
+                            <div class="art bordas1">
+                                <img src="src/imagens/Magic-The-Gathering.jpg" alt="Avacyn">
+                            </div>
+                            <div class="descricao overflow bordas1">
+                                <h3 class="tipo">Criatura Lendária - Anjo</h3>
+                                <img src="src/imagens/PCA_R.png" id="raridade">
+                            </div>
+                            <div class="textoCard overflow">
+                                <p class="tipoDescritivo">Voar</p>
+                                <p class="descricaoCard">
+                                Quando esta criatura se transforma em Avacyn, a Purificadora, ela causa 3 pontos de dano a cada outra criatura e a cada oponente.
+                                </p>
+                                <p class="fraseEfeito">
+                                "As mesmas asas que um dia trouxeram esperança, agora estão manchadas de sangue. Ela não é mais nossa guardiã" - Grete
+                                </p>
+                                <h3 class="poder"><b>6/5</b></h3>
+                            </div>
+                            
+                            <div class="rodape">
+                                <div class="rodapeEsquerda">
+                                    <p>005/297 M</p>
+                                    <p>OGW &#x2022; pt-BR</p>
+                                </div>
+                                <div class="rodapeDireita">
+                                    <p>&#x99; &amp; &#169; 2016 Wizards of the Coast</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+             <li class="cartao">
+                <div>
+                    <div class="backgroundCard1">
+                        <div class="conteudoCard">
+                            <div class="tituloCard1 overflow bordas2">
+                                <h2 class="nomeCard">Lyra Dawnbringer</h2>
+                                <p><img id="manaIcon" src="src/imagens/3.svg"> <img id="manaIcon" src="src/imagens/W.png"> <img id="manaIcon" src="src/imagens/W.png"></p>
+                            </div>
+                            <div class="art1 bordas2">
+                                <img src="src/imagens/magic-the-gathering-esports.png" alt="Avacyn">
+                            </div>
+                            <div class="descricao1 overflow bordas2">
+                                <h3 class="tipo">Criatura Lendária - Anjo</h3>
+                                <img src="src/imagens/DOM_R.png" id="raridade">
+                            </div>
+                            <div class="textoCard1 overflow">
+                                <p class="tipoDescritivo">Voar, iniciativa, vinculo com a vida</p>
+                                <p class="descricaoCard">
+                                Os outros anjos que você controla recebem +1/+1 e têm vinculo com a vida
+                                </p>
+                                <p class="fraseEfeito">
+                                "Você não está só, jamais esteve"
+                                </p>
+                                <h3 class="poder1"><b>5/5</b></h3>
+                            </div>
+                            
+                            <div class="rodape">
+                                <div class="rodapeEsquerda">
+                                    <p >026/269 M</p>
+                                    <p>OGW &#x2022; pt-BR</p>
+                                </div>
+                                <div class="rodapeDireita">
+                                    <p>&#x99; &amp; &#169; 2016 Wizards of the Coast</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="cartao ">
+                <div>
+                    <div class="backgroundCard2">
+                        <div class="conteudoCard">
+                            <div class="tituloCard1 overflow bordas3">
+                                <h2 class="nomeCard">Juramento de Nissa</h2>
+                                <p><img id="manaIcon1" src="src/imagens/g.svg"></p>
+                            </div>
+                            <div class="art2 bordas3">
+                                <img src="src/imagens/nissa.jpg" alt="Avacyn">
+                            </div>
+                            <div class="descricao1 overflow bordas3">
+                                <h3 class="tipo">Encatamento Lendário</h3>
+                                <img src="src/imagens/radidade.png" id="raridade">
+                            </div>
+                            <div class="textoCard2 overflow">
+                                <p class="tipoDescritivo">Quando Juramento de Nissa entrar no campo de batalha, olhe os três cards do topo de seu grimório. Você pode revelar um card de criatura, terreno ou planeswalker dentre eles e colocá-lo em sua mão. Coloque o resto no fundo de seu grimório em qualquer ordem.</p>
+                                <p class="descricaoCard">
+                                Você pode gastar mana como se fosse de qualquer cor para conjurar mágicas de planeswalker.
+                                </p>
+                                <p class="fraseEfeito">
+                                "Pela vida de todos os planos, eu serei uma sentinela."
+                                </p>
+                            </div>
+                            
+                            <div class="rodape">
+                                <div class="rodapeEsquerda">
+                                    <p>140/184 R</p>
+                                    <p>OGW &#x2022; pt-BR</p>
+                                </div>
+                                <div class="rodapeDireita">
+                                    <p>&#x99; &amp; &#169; 2016 Wizards of the Coast</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="cartao ">
+                <div>
+                    <div class="backgroundCard3">
+                        <div class="conteudoCard">
+                            <div class="tituloCard1 overflow bordas3">
+                                <h2 class="nomeCard">Floresta</h2>
+                            </div>
+                            <div class="art2 bordas3">
+                                <img src="src/imagens/floresta fundo.png" alt="Avacyn">
+                            </div>
+                            <div class="descricao1 overflow bordas3">
+                                <h3 class="tipo">Terreno Básico - Floresta</h3>
+                                <img src="src/imagens/AKH_R.png" id="raridade">
+                            </div>
+                            <div class="textoCard2 overflow terreno">
+                                <p class="tipoDescritivo" ><img src="src/imagens/tree2.svg"></p>
+                            </div>
+                            
+                            <div class="rodape">
+                                <div class="rodapeEsquerda">
+                                    <p>272/274 L</p>
+                                    <p>OGW &#x2022; pt-BR</p>
+                                </div>
+                                <div class="rodapeDireita">
+                                    <p>&#x99; &amp; &#169; 2016 Wizards of the Coast</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="cartao">
+                <div>
+                    <div class="backgroundCard3">
+                        <div class="conteudoCard">
+                            <div class="tituloCard1 overflow bordas2">
+                                <h2 class="nomeCard">Planície</h2>
+                            </div>
+                            <div class="art2 bordas2">
+                                <img src="src/imagens/d8tz4im-ae3a6c51-36ac-4ebc-a665-c1547a4cb689.jpg" alt="Avacyn">
+                            </div>
+                            <div class="descricao1 overflow bordas2">
+                                <h3 class="tipo">Terreno Básico - Planície</h3>
+                                <img src="src/imagens/AKH_R.png" id="raridade">
+                            </div>
+                            <div class="textoCard1 overflow terreno">
+                                <p class="tipoDescritivo" ><img src="src/imagens/sun.svg"></p>
+                            </div>
+                            
+                            <div class="rodape">
+                                <div class="rodapeEsquerda">
+                                    <p>192/583 L</p>
+                                    <p>OGW &#x2022; pt-BR</p>
+                                </div>
+                                <div class="rodapeDireita">
+                                    <p>&#x99; &amp; &#169; 2016 Wizards of the Coast</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <button class="btnSeta" id="btnAvancar">
+            <img src="src/imagens/seta.png" alt="setaAvançar">
+        </button>
+    </main>
+
+    <script src="src/js/index.js"></script>
+</body>
+</html>

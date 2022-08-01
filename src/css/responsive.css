@@ -1,0 +1,265 @@
+@media(max-width: 620px) {
+    .mtgSlider{
+        padding: 0 15px;
+        gap: 10px;
+    }
+    .btnSeta{
+        width: 20px;
+        height: 20px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .listaCard {
+        height: 500px;
+    }
+    .backgroundCard {
+        height: 430px;
+        width: 230px;
+    }
+    .backgroundCard1 {
+        height: 430px;
+        width: 230px;
+    }
+    .backgroundCard2 {
+        height: 430px;
+        width: 230px;
+    }
+    .backgroundCard3 {
+        height: 430px;
+        width: 230px;
+    }
+    .conteudoCard {
+        max-width: 230px;
+        max-height: 430px;
+    }
+    .conteudoCard .tituloCard .nomeCard {
+        font-size: 12px;
+    }
+    .conteudoCard .tituloCard1 .nomeCard {
+        font-size: 12px;
+    }
+    .conteudoCard #manaIcon {
+        height: 13px;
+    }
+    .conteudoCard .art img{
+        height: 200px;
+        width: 230px;
+    }
+    .conteudoCard .art2 img{
+        height: 200px;
+        width: 230px;
+    }
+    .conteudoCard .art3 img{
+        height: 200px;
+        width: 230px;
+    }
+    .conteudoCard .art1 img{
+        height: 200px;
+        width: 230px;
+    }
+    .conteudoCard .descricao1 .tipo {
+        font-size: 10px;
+    }
+    .conteudoCard .descricao .tipo {
+        font-size: 10px;
+    }
+    .conteudoCard .textoCard1 {
+        height: 50%;
+        overflow: auto;
+        align-items: center;
+        text-align: center;
+    }
+    .conteudoCard .textoCard {
+        height: 50%;
+        overflow: auto;
+        align-items: center;
+    }
+    .conteudoCard .textoCard2 {
+        height: 50%;
+        overflow: auto;
+        align-items: center;
+    }
+    .rodape .rodapeEsquerda p{
+        font-size: 5px;
+    }
+    .rodape .rodapeDireita p{
+        font-size: 5px;
+    }
+}
+@media(max-width: 360px){
+    .mtgSlider{
+        padding: 0 15px;
+        gap: 10px;
+    }
+    .btnSeta{
+        width: 20px;
+        height: 20px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .listaCard {
+        height: 450px;
+    }
+    .backgroundCard {
+        height: 360px;
+        width: 170px;
+    }
+    .backgroundCard1 {
+        height: 360px;
+        width: 170px;
+    }
+    .backgroundCard2 {
+        height: 360px;
+        width: 170px;
+    }
+    .backgroundCard3 {
+        height: 360px;
+        width: 170px;
+    }
+    .conteudoCard {
+        max-width: 170px;
+        max-height: 360px;
+    }
+    .conteudoCard .tituloCard .nomeCard {
+        font-size: 8px;
+    }
+    .conteudoCard .tituloCard1 .nomeCard {
+        font-size: 8px;
+    }
+    .conteudoCard #manaIcon {
+        height: 8px;
+    }
+    
+    .conteudoCard .art img{
+        height: 140px;
+        width: 165px;
+    }
+    .conteudoCard .art2 img{
+        height: 140px;
+        width: 165px;
+    }
+    .conteudoCard .art3 img{
+        height: 140px;
+        width: 165px;
+    }
+    .conteudoCard .art1 img{
+        height: 140px;
+        width: 165px;
+    }
+    .conteudoCard .descricao1 .tipo {
+        font-size: 8px;
+    }
+    .conteudoCard .descricao .tipo {
+        font-size: 8px;
+    }
+    .conteudoCard .textoCard1 {
+        height: 10px;
+        overflow: auto;
+    }
+    .conteudoCard .textoCard {
+        height: 10px;
+        overflow: auto;  
+    }
+    .conteudoCard .textoCard2 {
+        height: 10px;
+        overflow: auto;
+    }
+    .rodape .rodapeEsquerda p{
+        font-size: 5px;
+    }
+    .rodape .rodapeDireita p{
+        font-size: 5px;
+    }
+}
+@media(max-width: 400px){
+    .mtgSlider{
+        padding: 0 15px;
+        gap: 10px;
+    }
+    .btnSeta{
+        width: 20px;
+        height: 20px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .listaCard {
+        height: 450px;
+        width: 200px;
+    }
+    .backgroundCard {
+        height: 360px;
+        width: 170px;
+    }
+    .backgroundCard1 {
+        height: 360px;
+        width: 170px;
+    }
+    .backgroundCard2 {
+        height: 360px;
+        width: 170px;
+    }
+    .backgroundCard3 {
+        height: 360px;
+        width: 170px;
+    }
+    .conteudoCard {
+        max-width: 170px;
+        max-height: 360px;
+    }
+    .conteudoCard .tituloCard .nomeCard {
+        font-size: 8px;
+    }
+    .conteudoCard .tituloCard1 .nomeCard {
+        font-size: 8px;
+    }
+    .conteudoCard #manaIcon {
+        height: 8px;
+    }
+    
+    .conteudoCard .art img{
+        height: 140px;
+        width: 165px;
+    }
+    .conteudoCard .art2 img{
+        height: 140px;
+        width: 165px;
+    }
+    .conteudoCard .art3 img{
+        height: 140px;
+        width: 165px;
+    }
+    .conteudoCard .art1 img{
+        height: 140px;
+        width: 165px;
+    }
+    .conteudoCard .descricao1 .tipo {
+        font-size: 8px;
+    }
+    .conteudoCard .descricao .tipo {
+        font-size: 8px;
+    }
+    .conteudoCard .textoCard1 {
+        height: 10px;
+        overflow: auto;
+    }
+    .conteudoCard .textoCard {
+        height: 10px;
+        overflow: auto;  
+    }
+    .conteudoCard .textoCard2 {
+        height: 10px;
+        overflow: auto;
+    }
+    .rodape .rodapeEsquerda p{
+        font-size: 5px;
+    }
+    .rodape .rodapeDireita p{
+        font-size: 5px;
+    }
+}
